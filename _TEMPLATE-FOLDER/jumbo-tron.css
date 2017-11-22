@@ -1,0 +1,20 @@
+pre{
+    background-color:#ccfff8;
+    overflow:hidden;
+}
+
+.jumbotron.jumbo-bgimage-1{
+    background-image: url(template-imagery/lilly-rum-342740.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.header{
+    border-radius:0px;
+    margin-bottom:0px;
+    background:#fff;
+    width:100%;
+    position:fixed;
+    z-index:3;
+}
