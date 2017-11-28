@@ -22,21 +22,30 @@
 <!-- Bootstrap CDN -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<!-- GLOBAL Style -->
+<!-- GLOBAL HEADER Style -->
+<link rel="stylesheet" type="text/css" href="../../template-folder/css/global-header.css">
 <link rel="stylesheet" type="text/css" href="jumbo-tron.css">
 
 </head>
 
 <body>
-    <div class="header">
-        <div class="company-logo">
-            <a class="navbar-brand" href="#"><img class="team-logo" src="img/sparklogo_v2.png" alt="Triple Spark Design Logo"></a>
-            <span class="round-btn contact-btn-header" target="_blank" href="/contact.html"><input type="text" name="search_box" /></span>
+    <div class="header container">
+
+        <!-- <div class="company-logo">
+            <a class="navbar-brand" href="#"><img class="team-logo" src="template-imagery/sparklogo_v2.png" alt="Triple Spark Design Logo"></a>
+            <span class="round-btn contact-btn-header"><input class="form-control" type="text" name="search_box" /></span>
+        </div> -->
+
+        <div class="col-md-10">
+            <a class="navbar-brand" href="#"><img class="team-logo" src="../../template-folder/template-imagery/sparklogo_v2.png" alt="Triple Spark Design Logo"></a>
+        </div>
+        <div class="col-md-2">
+            <span class="search-module-header"><input class="form-control" type="text" name="search_box" placeholder="Search for module"/></span>
         </div>
     </div>
 
     <div class="jumbotron jumbo-bgimage-1">
-        <div class="container">
+        <div class="container words-overlay">
             <h1>Jumbo Tron</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">

@@ -1,0 +1,19 @@
+
+pre{
+    background-color:#ccfff8;
+    overflow:hidden;
+}
+
+.jumbotron.jumbo-bgimage-1{
+    background-image: url(../../template-folder/template-imagery/city-sun-rise.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.jumbotron{
+    padding-top:150px;
+}
+.container.words-overlay{
+    color:#fff;
+    text-shadow: 1px 1px 1px #000000;
+}

@@ -1,0 +1,11 @@
+.header{
+    border-radius:0px;
+    margin-bottom:0px;
+    background:#000;
+    width:100%;
+    position:fixed;
+    z-index:3;
+}
+.search-module-header{
+    margin:1px;
+}
