@@ -6,7 +6,8 @@
 <title>Jumbo Tron Template</title>
 
 
-<script src="jquery-3.2.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- update the version number as needed -->
 <script defer src="/__/firebase/4.4.0/firebase-app.js"></script>
 <!-- include only the Firebase features as you need -->
@@ -26,27 +27,78 @@
 <link rel="stylesheet" type="text/css" href="../../template-folder/css/global-header.css">
 <link rel="stylesheet" type="text/css" href="jumbo-tron.css">
 
+<script>
+  $( function() {
+    var arr = [
+      {
+        value: "Jumbo Tron 1 hero",
+        label: "Jumbo Tron 1 hero",
+        anchor: "#jb-1"
+      },
+      {
+        value: "Jumbo Tron 1.1 hero",
+        label: "Jumbo Tron 1.1 hero",
+        anchor: "#jb-1-1"
+      },
+      {
+        value: "Jumbo Tron 1.2 hero",
+        label: "Jumbo Tron 1.2 hero",
+        anchor: "#jb-1-2"
+      },
+      {
+        value: "Jumbo Tron 1.3 hero",
+        label: "Jumbo Tron 1.3 hero",
+        anchor: "#jb-1-3"
+      },
+      {
+        value: "Jumbo Tron 2 hero",
+        label: "Jumbo Tron 2 hero",
+        anchor: "#jb-2"
+      },
+      {
+        value: "Jumbo Tron 3 hero",
+        label: "Jumbo Tron 3 hero",
+        anchor: "#jb-3"
+      }
+    ];
+
+    //AUTO COMPLETE SEARCH
+    $('#search-box').autocomplete({
+        source: arr,
+        select: function (event, ui){
+            $('input[name="search_box"]').val(ui.item.label);
+            $anchorLink = ui.item.anchor;
+            $('#searchBtn').attr("href", $anchorLink);
+
+            return false;
+        }
+    });
+
+  } );
+  </script>
+
+
 </head>
 
 <body>
+   
     <div class="header container">
-
-        <!-- <div class="company-logo">
-            <a class="navbar-brand" href="#"><img class="team-logo" src="template-imagery/sparklogo_v2.png" alt="Triple Spark Design Logo"></a>
-            <span class="round-btn contact-btn-header"><input class="form-control" type="text" name="search_box" /></span>
-        </div> -->
-
-        <div class="col-md-10">
+        <div class="col-md-9">
             <a class="navbar-brand" href="#"><img class="team-logo" src="../../template-folder/template-imagery/sparklogo_v2.png" alt="Triple Spark Design Logo"></a>
         </div>
-        <div class="col-md-2">
-            <span class="search-module-header"><input class="form-control" type="text" name="search_box" placeholder="Search for module"/></span>
+        <div class="col-md-2 margintop-16">
+            <input id="search-box"class="form-control" type="text" name="search_box" placeholder="Search for module"/>
+        </div>
+        <div class="col-md-1 margintop-16 marginbottom-16">
+            <a href="#" id="searchBtn" class="btn btn-ghost-blue form-control">Search</a>
         </div>
     </div>
 
+    <!--JUMBO TRON 1 LAYER -->
+    <a id="jb-1" name="jb-1"></a>
     <div class="jumbotron jumbo-bgimage-1">
-        <div class="container words-overlay">
-            <h1>Jumbo Tron</h1>
+        <div class="container words-overlay-black">
+            <h1>Jumbo Tron 1</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
@@ -55,13 +107,16 @@
             </p>
         </div>
     </div>
+    <!--JUMBO TRON 1 LAYER -->
+
+<!--JUMBO TRON 1 CODE -->
 <div class="container">
-<h4>Jumbo Tron - .jumbo-bg-1</h4>
-<pre>
+<h5>HTML:</h5>
+<pre class="html">
 <code>
 &lt;div class="jumbotron jumbo-bgimage-1"&gt;
 &lt;div class="container"&gt;
-&lt;h1>Jumbo Tron&lt;/h1&gt;
+&lt;h1>Jumbo Tron 1&lt;/h1&gt;
 &lt;p class="lead"&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
 &lt;hr class="my-4"&gt;
 &lt;p>It uses utility classes for typography and spacing to space content out within the larger container.&lt;/p&gt;
@@ -72,8 +127,347 @@
 &lt;/div&gt;
 </code>
 </pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.jumbotron.jumbo-bgimage-1{
+    background-image: url(../../template-folder/template-imagery/city-sun-rise.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.jumbotron.jumbo-bgimage-1{
+    padding-top:150px;
+}
+.container.words-overlay-black{
+    color:#000;
+}
+</code>
+</pre>
 </div>
+<!--JUMBO TRON 1 CODE -->
 
+
+<a id="jb-1-1" name="jb-1-1"></a>
+<hr class="module-divider" />
+
+    <!--JUMBO TRON 1.1 LAYER -->
+    <div class="jumbotron jumbo-bgimage-1-1">
+            <div class="container words-overlay-black width-40percent marginright-10percent text-right">
+                <h1>Jumbo Tron 1.1</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <!--JUMBO TRON 1.1 LAYER -->
+    
+<!--JUMBO TRON 1.1 CODE -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+&lt;div class="jumbotron jumbo-bgimage-1-1"&gt;
+&lt;div class="container words-overlay-black width-40percent marginright-10percent text-right"&gt;
+&lt;h1>Jumbo Tron 1-1&lt;/h1&gt;
+&lt;p class="lead"&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+&lt;hr class="my-4"&gt;
+&lt;p>It uses utility classes for typography and spacing to space content out within the larger container.&lt;/p&gt;
+&lt;p class="lead"&gt;
+&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.jumbotron.jumbo-bgimage-1-1{
+    background-image: url(../../template-folder/template-imagery/artem-sapegin-229391.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.jumbo-bgimage-1-1 .container.words-overlay-black{
+    color:#000;
+    background-color:#ffffff3b;
+    position:relative;
+}
+.jumbo-bgimage-1-1 .container.words-overlay-black{
+    color:#000;
+    position:relative;
+    margin-left:10%;
+    background-color:#ffffff3b;
+}
+.width-40percent{
+    width:40%;
+}
+.marginright-10percent{
+    margin-right:10%;
+}
+
+@media (max-width: 767px){
+    .width-40percent{
+        width:100%;
+    }
+    .marginright-10percent{
+        margin-right:0%;
+    }
+}
+</code>
+</pre>
+</div>
+<!--JUMBO TRON 1.1 CODE -->
+
+<a id="jb-1-2" name="jb-1-2"></a>
+<hr class="module-divider" />
+
+
+    <!--JUMBO TRON 1.2 LAYER -->
+    <div class="jumbotron jumbo-bgimage-1-2">
+        <div class="container words-overlay-black width-40percent marginleft-10percent text-left">
+            <h1>Jumbo Tron 1.2</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+    </div>
+    <!--JUMBO TRON 1.2 LAYER -->
+    
+<!--JUMBO TRON 1.2 CODE -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+&lt;div class="jumbotron jumbo-bgimage-1-2"&gt;
+&lt;div class="container words-overlay-black width-40percent marginleft-10percent text-left"&gt;
+&lt;h1>Jumbo Tron 1-2&lt;/h1&gt;
+&lt;p class="lead"&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+&lt;hr class="my-4"&gt;
+&lt;p>It uses utility classes for typography and spacing to space content out within the larger container.&lt;/p&gt;
+&lt;p class="lead"&gt;
+&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.jumbotron.jumbo-bgimage-1-2{
+    background-image: url(../../template-folder/template-imagery/artem-sapegin-229391.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.jumbo-bgimage-1-2 .container.words-overlay-black{
+    color:#000;
+    position:relative;
+    margin-left:10%;
+    background-color:#ffffff3b;
+}
+.width-40percent{
+    width:40%;
+}
+.marginleft-10percent{
+    margin-left:10%;
+}
+
+@media (max-width: 767px){
+    .width-40percent{
+        width:100%;
+    }
+    .marginleft-10percent{
+        margin-left:0%;
+    }
+}
+</code>
+</pre>
+</div>
+<!--JUMBO TRON 1.2 CODE -->
+
+
+<a id="jb-1-3" name="jb-1-3"></a>
+<hr class="module-divider" />
+
+
+    <!--JUMBO TRON 1.3 LAYER -->
+    <div class="jumbotron jumbo-bgimage-1-3">
+        <div class="container words-overlay-black width-40percent text-center">
+            <h1>Jumbo Tron 1.3</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+    </div>
+    <!--JUMBO TRON 1.2 LAYER -->
+        
+<!--JUMBO TRON 1.2 CODE -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+&lt;div class="jumbotron jumbo-bgimage-1-3"&gt;
+&lt;div class="container words-overlay-black width-40percent text-center"&gt;
+&lt;h1>Jumbo Tron 1-3&lt;/h1&gt;
+&lt;p class="lead"&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+&lt;hr class="my-4"&gt;
+&lt;p>It uses utility classes for typography and spacing to space content out within the larger container.&lt;/p&gt;
+&lt;p class="lead"&gt;
+&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.jumbotron.jumbo-bgimage-1-3{
+    background-image: url(../../template-folder/template-imagery/artem-sapegin-229391.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.jumbo-bgimage-1-3 .container.words-overlay-black{
+    color:#000;
+    position:relative;
+    margin-left:10%;
+    background-color:#ffffff3b;
+}
+.width-40percent{
+    width:40%;
+}
+
+@media (max-width: 767px){
+    .width-40percent{
+        width:100%;
+    }
+}
+</code>
+</pre>
+</div>
+<!--JUMBO TRON 1.2 CODE -->
+
+
+<a id="jb-2" name="jb-2"></a>
+<hr class="module-divider" />
+
+    <!--JUMBO TRON 2 LAYER -->
+    <div class="jumbotron jumbo-bgimage-2">
+            <div class="container words-overlay-white">
+                <h1>Jumbo Tron 2</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <!--JUMBO TRON 2 LAYER -->
+    
+<!--JUMBO TRON 2 CODE -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+&lt;div class="jumbotron jumbo-bgimage-2"&gt;
+&lt;div class="container words-overlay-white"&gt;
+&lt;h1>Jumbo Tron 2&lt;/h1&gt;
+&lt;p class="lead"&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+&lt;hr class="my-4"&gt;
+&lt;p class="lead"&gt;
+&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.jumbotron.jumbo-bgimage-2{
+    background-image: url(../../template-folder/template-imagery/artem-sapegin-229391.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.jumbotron.jumbo-bgimage-2{
+    padding-top:75px;
+}
+.container.words-overlay-white{
+    color:#fff;
+    text-shadow: 1px 1px 1px #000000;
+}
+</code>
+</pre>
+</div>
+<!--JUMBO TRON 2 CODE -->
+
+<a id="jb-3" name="jb-3"></a>
+<hr class="module-divider" />
+    <!--JUMBO TRON 3 LAYER -->
+    
+    <div class="jumbotron jumbo-bgimage-3">
+            <div class="container words-overlay-white text-center">
+                <h1>Jumbo Tron 3</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <hr class="my-4">
+                <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+            </div>
+        </div>
+        <!--JUMBO TRON 3 LAYER -->
+    
+<!--JUMBO TRON 3 CODE -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+&lt;div class="jumbotron jumbo-bgimage-3"&gt;
+&lt;div class="container words-overlay-white text-center"&gt;
+&lt;h1>Jumbo Tron 3&lt;/h1&gt;
+&lt;p class="lead"&gt;This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.&lt;/p&gt;
+&lt;hr class="my-4"&gt;
+&lt;p class="lead"&gt;
+&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.jumbotron.jumbo-bgimage-3{
+    background-image: url(../../template-folder/template-imagery/sawyer-bengtson-256274.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.jumbotron.jumbo-bgimage-3{
+    padding:260px 0px;
+}
+.container.words-overlay-white{
+    color:#fff;
+    text-shadow: 1px 1px 1px #000000;
+}
+</code>
+</pre>
+</div>
+<!--JUMBO TRON 3 CODE -->
 
 
 </body>
