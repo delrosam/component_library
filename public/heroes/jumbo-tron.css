@@ -61,12 +61,18 @@ pre.css{
 /* Jumbo Tron 3 Styling */
 .jumbotron.jumbo-bgimage-3{
     background-image: url(../../template-folder/template-imagery/sawyer-bengtson-256274.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
 }
-.jumbotron.jumbo-bgimage-3{
+.jumbotron.jumbo-bgimage-3,
+.jumbotron.jumbo-bgimage-3-1,
+.jumbotron.jumbo-bgimage-3-2{
     padding:260px 0px;
+}
+
+.jumbotron.jumbo-bgimage-3-1{
+    background-image: url(../../template-folder/template-imagery/dan-gribbin-50368.jpg);
+}
+.jumbotron.jumbo-bgimage-3-2{
+    background-image: url(../../template-folder/template-imagery/filip-mroz-377525.jpg);
 }
 /* Jumbo Tron 3 Styling */
 
