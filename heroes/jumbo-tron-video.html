@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jumbo Tron Template</title>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/4.4.0/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/4.4.0/firebase-auth.js"></script>
+<script defer src="/__/firebase/4.4.0/firebase-database.js"></script>
+<script defer src="/__/firebase/4.4.0/firebase-messaging.js"></script>
+<script defer src="/__/firebase/4.4.0/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+
+
+
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- GLOBAL HEADER Style -->
+<link rel="stylesheet" type="text/css" href="../template-folder/css/global-header.css">
+<link rel="stylesheet" type="text/css" href="jumbo-tron.css">
+
+<script defer src="../template-folder/js/search-box.js"></script>
+
+</head>
+
+<body>
+   
+    <div class="header container">
+        <div class="col-md-9">
+            <a class="navbar-brand" href="https://triplesparkdesigns.com/heroes/jumbo-tron.html"><img style="display:none;" class="team-logo" src="../template-folder/template-imagery/sparklogo_v2.png" alt="Triple Spark Design Logo"></a>
+        </div>
+        <div class="col-md-2 margintop-16">
+            <input id="search-box"class="form-control" type="text" name="search_box" placeholder="Search for module"/>
+        </div>
+        <div class="col-md-1 margintop-16 marginbottom-16">
+            <a href="#" id="searchBtn" class="btn-warning btn btn-ghost-blue form-control">Search</a>
+        </div>
+    </div>
+
+
+
+
+<a id="jb-4" name="jb-4"></a>
+
+    <!--JUMBO TRON4 LAYER -->
+
+
+        <video autoplay muted loop id="video-background">
+            <source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+          
+        <div class="video-content-over">
+            <h1>Jumbo Tron 4 - Video Background</h1>
+            <p>This is an example of a full width HTML 5 video background with content overlay and a pause button.</p>
+            <button id="pause-button" class="btn-danger btn" onclick="myFunction()">Pause</button>
+
+                    <!--JUMBO TRON 4 CODE -->
+                    
+                    <h5>HTML:</h5>
+                    <pre class="html" style="background-color:#ccfff800; border:0px solid #fff; color:#fff;">
+                    <code>
+                    &lt;div class="jumbotron jumbo-bgimage-4"&gt;
+                    &lt;video autoplay muted loop id="video-background"&gt;
+                    &lt;source src="https://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4"&gt;
+                    Your browser does not support HTML5 video.
+                    &lt;/video&gt;
+                    
+                    &lt;div class="video-content-over"&gt;
+                    &lt;h1&gt;Jumbo Tron 4 - Video Background&lt;/h1&gt;
+                    &lt;p"&gt;This is an example of a full width HTML 5 video background with content overlay and a pause button.&lt;/p&gt;
+                    &lt;button id="pause-button" onclick="myFunction()"&gt;Pause&lt;/button&gt;
+                    &lt;/div&gt;
+                    </code>
+                    </pre>
+                    <h5>CSS:</h5>
+                    <pre class="css" style="background-color:#ccfff800; border:0px solid #fff; color:#fff;">
+                    <code>
+                    #video-background{
+                        position: fixed;
+                        right: 0;
+                        bottom: 0;
+                        min-width: 100%; 
+                        min-height: 100%;
+                    }
+                    .video-content-over{
+                        position: relative;
+                        margin-top:10%;
+                        background: rgba(0, 0, 0, 0.3);
+                        color: #f1f1f1;
+                        width: 100%;
+                        padding: 20px;
+                    }
+                    #pause-button {
+                        width: 200px;
+                        font-size: 18px;
+                        padding: 10px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                    </code>
+                    </pre>
+                    <h5>JS:</h5>
+                    <pre class="css" style="background-color:#81eb0800; border:0px solid #fff; color:#fff;">
+                    <code>
+                    var video = document.getElementById("video-background");
+                    var btn = document.getElementById("pause-button");
+                    
+                    function myFunction() {
+                        if (video.paused) {
+                            video.play();
+                            btn.innerHTML = "Pause";
+                            btn.className -= " btn-success";
+                            btn.className += " btn-danger";
+                        } else {
+                            video.pause();
+                            btn.innerHTML = "Play";
+                            btn.className -= " btn-danger";
+                            btn.className += " btn-success";
+                        }
+                    }
+                    </code>
+                    </pre>
+                   
+                    <!--JUMBO TRON 4 CODE -->
+        </div>
+
+    <!--JUMBO TRON 4 LAYER -->
+    
+
+
+
+
+<script>
+var video = document.getElementById("video-background");
+var btn = document.getElementById("pause-button");
+
+function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+        btn.className -= " btn-success";
+        btn.className += " btn-danger";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+        btn.className -= " btn-danger";
+        btn.className += " btn-success";
+    }
+}
+</script>
+
+</body>
+
+</html>
