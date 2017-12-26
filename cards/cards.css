@@ -1,0 +1,283 @@
+.fullsize{
+    padding-left:0px;
+    padding-right:0px;
+}
+pre.html{
+    background-color:#ccfff8;
+    overflow:hidden;
+    font-size:10px;
+}
+pre.css{
+    background-color:#f6f8e9;
+    overflow:hidden;
+    font-size:10px;
+}
+
+h4.card-title{
+    margin-top:0px;
+}
+p.card-text{
+    font-size:13px;
+}
+.card{
+    margin-bottom:15px;
+}
+.card-block{
+    padding-bottom:4%;
+}
+
+.panel-image{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    padding:30%;
+    margin-bottom:4%;
+}
+
+/* Cards 1 */
+.card-img-1.panel-image{
+    background-image: url(../../template-folder/template-imagery/stacy-wyss-702.jpg);
+}
+
+.padded{
+    padding:0% 4% 4% 4%;
+}
+.add-border{
+    border: 1px solid #c9c9c9;
+}
+.add-shadow{
+    box-shadow:0px 4px 0px #c9c9c9;
+}
+
+
+/* Cards 1.2 */
+.card-img-1-2.panel-image{
+    background-image: url(../../template-folder/template-imagery/trevor-cole-389734.jpg);
+}
+
+
+
+
+/* Cards 2 */
+.card.zoom-wrap{
+    margin:0;
+}
+.background-zoom{
+    padding:30% 10%;
+}
+.overlay-back{
+    background-color:#00000091;
+    /* background-color:#000000db; */
+    color:#fff;
+}
+div.zoom-wrap {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+div.zoom-wrap > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* opacity:.6; */
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap:hover > div.panel-image{
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1); 
+    /* opacity:1; */
+}
+
+
+.sunset-bg{
+    background-image: url(../../template-folder/template-imagery/denys-nevozhai-185408.jpg);
+}
+.blowing-snow-bg{
+    background-image: url(../../template-folder/template-imagery/teddy-kelley-179100.jpg);
+}
+.snowy-road-bg{
+    background-image: url(../../template-folder/template-imagery/simon-matzinger-202022.jpg);
+}
+
+
+
+/*CARDS 2.1 - Initially Hidden Content Overlay*/
+.overlay-hidden .overlay-back{
+    background-color:#0000009e;
+}
+.overlay-hidden .overlay-back .card-title,
+.overlay-hidden .overlay-back .card-text,
+.overlay-hidden .overlay-back .btn{
+    opacity:0;
+}
+div.zoom-wrap.overlay-hidden > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap.overlay-hidden:hover > div.panel-image{
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1); 
+    opacity:.9;
+}
+div.zoom-wrap.overlay-hidden:hover > .overlay-back{
+    background-color:#00000050;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .card-title,
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .card-text,
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .btn{
+    color:#fff;
+    opacity:1;
+}
+.mac-office-bg{
+    background-image: url(../../template-folder/template-imagery/annie-spratt-294450.jpg);
+}
+.holding-up-phone-bg{
+    background-image: url(../../template-folder/template-imagery/zach-meaney-248676.jpg);
+}
+.phone-colors-bg{
+    background-image: url(../../template-folder/template-imagery/rodion-kutsaev-184298.jpg);
+}
+
+
+
+
+
+
+/*CARDS 2.2 - Title Only*/
+.snow-tree-left-bg{
+    background-image: url(../../template-folder/template-imagery/pigoff-photography-195118.jpg);
+}
+.pine-leaf-bg{
+    background-image: url(../../template-folder/template-imagery/mikael-kristenson-1300.jpg);
+}
+.waterfall-bg{
+    background-image: url(../../template-folder/template-imagery/blair-fraser-21140.jpg);
+}
+
+
+
+/*CARDS 2.3 - Overlay Swap*/
+.overlay-hidden-swap .overlay-back{
+    background-color:#0000009e;
+}
+.overlay-hidden-swap .overlay-back .card-text,
+.overlay-hidden-swap .overlay-back .btn{
+    opacity:0;
+}
+div.zoom-wrap.overlay-hidden-swap > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap.overlay-hidden-swap:hover > div.panel-image{
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1); 
+    opacity:.9;
+}
+div.zoom-wrap.overlay-hidden-swap:hover > .overlay-back{
+    background-color:#00000050;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+
+div.zoom-wrap.overlay-hidden-swap:hover > .overlay-back .card-text,
+div.zoom-wrap.overlay-hidden-swap:hover > .overlay-back .btn{
+    color:#fff;
+    opacity:1;
+}
+.tablet-on-table-bg{
+    background-image: url(../../template-folder/template-imagery/aaron-burden-329406.jpg);
+}
+.ios-devices-bg{
+    background-image: url(../../template-folder/template-imagery/william-iven-5895.jpg);
+}
+.mac-on-desk-bg{
+    background-image: url(../../template-folder/template-imagery/domenico-loia-364221.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+/* Cards 3  - Inverse Zoom Scale*/
+.background-zoom-tall{
+    padding:100% 10% 5% 10%;
+}
+.inverse-overlay-back{
+    background-color:#ffffff3b;
+    color:#000;
+}
+div.zoom-wrap.inverse-zoom > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1.5,1.5);
+    -webkit-transform: scale(1.5,1.5);
+    transform: scale(1.5,1.5);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap.inverse-zoom:hover > div.panel-image{
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+}
+
+
+
+

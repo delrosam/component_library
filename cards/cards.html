@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cards Template</title>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- update the version number as needed -->
+<script defer src="/__/firebase/4.4.0/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/4.4.0/firebase-auth.js"></script>
+<script defer src="/__/firebase/4.4.0/firebase-database.js"></script>
+<script defer src="/__/firebase/4.4.0/firebase-messaging.js"></script>
+<script defer src="/__/firebase/4.4.0/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+
+
+
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- GLOBAL HEADER Style -->
+<link rel="stylesheet" type="text/css" href="../../template-folder/css/global-header.css">
+<link rel="stylesheet" type="text/css" href="cards.css">
+
+<script defer src="../../template-folder/js/search-box.js"></script>
+
+</head>
+
+<body>
+   
+    <div class="header container">
+        <div class="col-md-9">
+            <a class="navbar-brand" href="https://triplesparkdesigns.com/heroes/jumbo-tron.html"><img style="display:none;" class="team-logo" src="../../template-folder/template-imagery/sparklogo_v2.png" alt="Triple Spark Design Logo"></a>
+        </div>
+        <div class="col-md-2 margintop-16">
+            <input id="search-box"class="form-control" type="text" name="search_box" placeholder="Search for module"/>
+        </div>
+        <div class="col-md-1 margintop-16 marginbottom-16">
+            <a href="#" id="searchBtn" class="btn-warning btn btn-ghost-blue form-control">Search</a>
+        </div>
+    </div>
+
+    <hr class="module-divider" style="border-top:100px solid #fff;" />
+
+    <!-- CARDS 1 - 3x1 Layer -->
+    <a id="cd-1" name="cd-1"></a>
+    <h1 class="module-title">Card 1 - 3x1</h1>
+    <hr class="module-divider" />
+
+    <div class="container">
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="card add-border add-shadow">
+                    <div class="card-img-1 panel-image"></div>
+                    <div class="card-block text-left padded">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                        <a href="#" class="btn btn-success">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="card add-border add-shadow">
+                <div class="card-img-1 panel-image"></div>
+                <div class="card-block text-center padded">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                    <a href="#" class="btn btn-success">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="card add-border add-shadow">
+                <div class="card-img-1 panel-image"></div>
+                <div class="card-block text-right padded">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                    <a href="#" class="btn btn-success">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CARDS 1 - 3x1 Layer -->
+
+<!-- CARDS 1 - 3x1 Layer CODE-->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+    &lt;div class="col-md-4 col-sm-4 col-xs-12"&gt;
+        &lt;div class="card add-border add-shadow"&gt;
+                &lt;div class="card-img-1 panel-image"&gt;&lt;/div&gt;
+                &lt;div class="card-block text-left padded"&gt;
+                    &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                    &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                    &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12"&gt;
+        &lt;div class="card add-border add-shadow"&gt;
+            &lt;div class="card-img-1 panel-image"&gt;&lt;/div&gt;
+            &lt;div class="card-block text-center padded"&gt;
+                &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12"&gt;
+        &lt;div class="card add-border add-shadow"&gt;
+            &lt;div class="card-img-1 panel-image"&gt;&lt;/div&gt;
+            &lt;div class="card-block text-right padded"&gt;
+                &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+h4.card-title{
+    margin-top:0px;
+}
+p.card-text{
+    font-size:13px;
+}
+.card{
+    margin-bottom:15px;
+}
+.card-block{
+    padding-bottom:4%;
+}
+.panel-image{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    padding:30%;
+    margin-bottom:4%;
+}
+.padded{
+    padding:0% 4% 4% 4%;
+}
+.add-border{
+    border: 1px solid #c9c9c9;
+}
+.add-shadow{
+    box-shadow:0px 4px 0px #c9c9c9;
+}
+#card-img-1.panel-image{
+    background-image: url(../../template-folder/template-imagery/stacy-wyss-702.jpg);
+}
+</code>
+</pre>
+</div>
+<!-- CARDS 1 - 3x1 Layer CODE-->
+
+
+
+    <!-- CARDS 1.2 - 3x1 Layer -->
+    <a id="cd-1-2" name="cd-1-2"></a>
+    <h1 class="module-title">Card 1.2 - 3x1</h1>
+    <hr class="module-divider" />
+    
+    <div class="container">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="card">
+                    <div class="card-img-1-2 panel-image"></div>
+                    <div class="card-block text-left">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                        <a href="#" class="btn btn-success">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="card">
+                <div class="card-img-1-2 panel-image"></div>
+                <div class="card-block text-center">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                    <a href="#" class="btn btn-success">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="card">
+                <div class="card-img-1-2 panel-image"></div>
+                <div class="card-block text-right">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                    <a href="#" class="btn btn-success">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CARDS 1.2 - 3x1 Layer -->
+
+<!-- CARDS 1.2 - 3x1 Layer -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+    &lt;div class="col-md-4 col-sm-4 col-xs-12"&gt;
+        &lt;div class="card"&gt;
+                &lt;div class="card-img-1-2 panel-image"&gt;&lt;/div&gt;
+                &lt;div class="card-block text-left"&gt;
+                    &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                    &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                    &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12"&gt;
+        &lt;div class="card"&gt;
+            &lt;div class="card-img-1-2 panel-image"&gt;&lt;/div&gt;
+            &lt;div class="card-block text-center"&gt;
+                &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12"&gt;
+        &lt;div class="card"&gt;
+            &lt;div class="card-img-1-2 panel-image"&gt;&lt;/div&gt;
+            &lt;div class="card-block text-right"&gt;
+                &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+h4.card-title{
+    margin-top:0px;
+}
+p.card-text{
+    font-size:13px;
+}
+.card{
+    margin-bottom:15px;
+}
+.panel-image{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center center;
+    padding:30%;
+    margin-bottom:4%;
+}
+.card-img-1-2.panel-image{
+    background-image: url(../../template-folder/template-imagery/trevor-cole-389734.jpg);
+}
+</code>
+</pre>
+</div>
+<!-- CARDS 1.2 - 3x1 Layer -->
+
+
+
+
+   <!-- CARDS 2 - 3x1 Full Size Layer -->
+   <a id="cd-2" name="cd-2"></a>
+   <h1 class="module-title">Card 2 - 3x1 Full Size</h1>
+   <hr class="module-divider" />
+   
+
+
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+           
+           <div class="card zoom-wrap">
+                   <div class="card-img-2 panel-image sunset-bg"></div>  
+                   <div class="card-block text-left background-zoom overlay-back">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                        <a href="#" class="btn btn-success">Go somewhere</a>
+                   </div>
+            </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+            <div class="card zoom-wrap">
+                    <div class="card-img-2 panel-image blowing-snow-bg"></div>  
+                    <div class="card-block text-center background-zoom overlay-back">
+                         <h4 class="card-title">Card title</h4>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                         <a href="#" class="btn btn-success">Go somewhere</a>
+                    </div>
+             </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+            <div class="card zoom-wrap">
+                    <div class="card-img-2 panel-image snowy-road-bg"></div>  
+                    <div class="card-block text-right background-zoom overlay-back">
+                         <h4 class="card-title">Card title</h4>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                         <a href="#" class="btn btn-success">Go somewhere</a>
+                    </div>
+             </div>
+       </div>
+       <!-- CARDS 2 - 3x1 Layer -->
+
+<div class="container"></div>
+<!-- CARDS 2- 3x1 Layer -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+        &lt;div class="card zoom-wrap"&gt;
+                &lt;div class="card-img-2 panel-image sunset-bg"&gt;&lt;/div&gt;  
+                &lt;div class="card-block text-left background-zoom overlay-back"&gt;
+                     &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                     &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                     &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                &lt;/div&gt;
+         &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-2 panel-image blowing-snow-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-center background-zoom overlay-back"&gt;
+                      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                      &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-2 panel-image snowy-road-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-right background-zoom overlay-back"&gt;
+                      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                      &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.card.zoom-wrap{
+    margin:0;
+}
+.background-zoom{
+    padding:30% 10%;
+    background-color:#00000091;
+    color:#fff;
+}
+div.zoom-wrap {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+div.zoom-wrap > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap:hover > div.panel-image{
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1); 
+}
+
+.sunset-bg{
+    background-image: url(../../template-folder/template-imagery/denys-nevozhai-185408.jpg);
+}
+.blowing-snow-bg{
+    background-image: url(../../template-folder/template-imagery/teddy-kelley-179100.jpg);
+}
+.snowy-road-bg{
+    background-image: url(../../template-folder/template-imagery/simon-matzinger-202022.jpg);
+}
+</code>
+</pre>
+</div>
+<!-- CARDS 2 - 3x1 Layer -->
+
+
+
+
+
+   <!-- CARDS 2.1 - 3x1 Full Size Layer -->
+   <a id="cd-2-1" name="cd-2-1"></a>
+   <h1 class="module-title">Card 2.1 - 3x1 Full Size - Initially Hidden Overlay</h1>
+   <hr class="module-divider" />
+   
+
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+           
+           <div class="card zoom-wrap overlay-hidden">
+                   <div class="card-img-2-1 panel-image mac-office-bg"></div>  
+                   <div class="card-block text-left background-zoom overlay-back">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                        <a href="#" class="btn btn-success">Go somewhere</a>
+                   </div>
+            </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+            <div class="card zoom-wrap overlay-hidden">
+                    <div class="card-img-2-1 panel-image holding-up-phone-bg"></div>  
+                    <div class="card-block text-center background-zoom overlay-back">
+                         <h4 class="card-title">Card title</h4>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                         <a href="#" class="btn btn-success">Go somewhere</a>
+                    </div>
+             </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+            <div class="card zoom-wrap overlay-hidden">
+                    <div class="card-img-2-1 panel-image phone-colors-bg"></div>  
+                    <div class="card-block text-right background-zoom overlay-back">
+                         <h4 class="card-title">Card title</h4>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                         <a href="#" class="btn btn-success">Go somewhere</a>
+                    </div>
+             </div>
+       </div>
+       <!-- CARDS 2 - 3x1 Layer -->
+
+<div class="container"></div>
+<!-- CARDS 2.1 - 3x1 Layer -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+        &lt;div class="card zoom-wrap"&gt;
+                &lt;div class="card-img-2-1 panel-image sunset-bg"&gt;&lt;/div&gt;  
+                &lt;div class="card-block text-left background-zoom overlay-back"&gt;
+                     &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                     &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                     &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                &lt;/div&gt;
+         &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-2-1 panel-image blowing-snow-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-center background-zoom overlay-back"&gt;
+                      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                      &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-2-1 panel-image snowy-road-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-right background-zoom overlay-back"&gt;
+                      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                      &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.overlay-hidden .overlay-back{
+    background-color:#0000009e;
+}
+.overlay-hidden .overlay-back .card-title,
+.overlay-hidden .overlay-back .card-text,
+.overlay-hidden .overlay-back .btn{
+    opacity:0;
+}
+div.zoom-wrap.overlay-hidden > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap.overlay-hidden:hover > div.panel-image{
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1); 
+    opacity:.9;
+}
+div.zoom-wrap.overlay-hidden:hover > .overlay-back{
+    background-color:#00000050;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .card-title,
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .card-text,
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .btn{
+    color:#fff;
+    opacity:1;
+}
+.mac-office-bg{
+    background-image: url(../../template-folder/template-imagery/annie-spratt-294450.jpg);
+}
+.holding-up-phone-bg{
+    background-image: url(../../template-folder/template-imagery/zach-meaney-248676.jpg);
+}
+.phone-colors-bg{
+    background-image: url(../../template-folder/template-imagery/rodion-kutsaev-184298.jpg);
+}
+</code>
+</pre>
+</div>
+<!-- CARDS 2.1 - 3x1 Layer -->
+
+
+
+
+
+   <!-- CARDS 2.2 - 3x1 Full Size Layer -->
+   <a id="cd-2-2" name="cd-2-2"></a>
+   <h1 class="module-title">Card 2.2 - 3x1 Full Size - Just Title</h1>
+   <hr class="module-divider" />
+   
+
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+           <div class="card zoom-wrap">
+                   <div class="card-img-2-2 panel-image snow-tree-left-bg"></div>  
+                   <div class="card-block text-center background-zoom overlay-back">
+                        <h2>Card Title</h2>
+                   </div>
+            </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+            <div class="card zoom-wrap">
+                    <div class="card-img-2-2 panel-image pine-leaf-bg"></div>  
+                    <div class="card-block text-center background-zoom overlay-back">
+                        <h2>Card Title</h2>
+                    </div>
+             </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+            <div class="card zoom-wrap">
+                    <div class="card-img-2-2 panel-image waterfall-bg"></div>  
+                    <div class="card-block text-center background-zoom overlay-back">
+                        <h2>Card Title</h2>
+                    </div>
+             </div>
+       </div>
+       <!-- CARDS 2.2 - 3x1 Layer -->
+
+<div class="container"></div>
+<!-- CARDS 2.2 - 3x1 Layer -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+        &lt;div class="card zoom-wrap"&gt;
+                &lt;div class="card-img-2-2 panel-image snow-tree-left-bg"&gt;&lt;/div&gt;  
+                &lt;div class="card-block text-center background-zoom overlay-back"&gt;
+                     &lt;h2&gt;Card Title&lt;/h2&gt;
+                &lt;/div&gt;
+         &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-2-2 panel-image pine-leaf-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-center background-zoom overlay-back"&gt;
+                     &lt;h2&gt;Card Title&lt;/h2&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-2-2 panel-image waterfall-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-center background-zoom overlay-back"&gt;
+                     &lt;h2&gt;Card Title&lt;/h2&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.card.zoom-wrap{
+    margin:0;
+}
+.background-zoom{
+    padding:30% 10%;
+    background-color:#00000091;
+    color:#fff;
+}
+div.zoom-wrap {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+div.zoom-wrap > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap:hover > div.panel-image{
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1); 
+}
+
+.snow-tree-left-bg{
+    background-image: url(../../template-folder/template-imagery/pigoff-photography-195118.jpg);
+}
+.pine-leaf-bg{
+    background-image: url(../../template-folder/template-imagery/mikael-kristenson-1300.jpg);
+}
+.waterfall-bg{
+    background-image: url(../../template-folder/template-imagery/blair-fraser-21140.jpg);
+}
+</code>
+</pre>
+</div>
+<!-- CARDS 2.2 - 3x1 Layer -->
+
+
+
+
+
+   <!-- CARDS 2.3 - 3x1 Full Size Layer -->
+   <a id="cd-2-3" name="cd-2-3"></a>
+   <h1 class="module-title">Card 2.3 - 3x1 Full Size - Overlay Swap</h1>
+   <hr class="module-divider" />
+   
+
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+           
+           <div class="card zoom-wrap overlay-hidden-swap">
+                   <div class="card-img-2-1 panel-image tablet-on-table-bg"></div>  
+                   <div class="card-block text-center background-zoom overlay-back">
+                      
+                        <h2 class="card-title">Card title</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                        <a href="#" class="btn btn-warning">Go somewhere</a>
+                   </div>
+            </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+            <div class="card zoom-wrap overlay-hidden-swap">
+                    <div class="card-img-2-1 panel-image ios-devices-bg"></div>  
+                    <div class="card-block text-center background-zoom overlay-back">
+                        
+                         <h2 class="card-title">Card title</h2>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                         <a href="#" class="btn btn-warning">Go somewhere</a>
+                    </div>
+             </div>
+       </div>
+       <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+            <div class="card zoom-wrap overlay-hidden-swap">
+                    <div class="card-img-2-1 panel-image mac-on-desk-bg"></div>  
+                    <div class="card-block text-center background-zoom overlay-back">
+                         
+                            <h2 class="card-title">Card title</h2>
+                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                         <a href="#" class="btn btn-warning">Go somewhere</a>
+                    </div>
+             </div>
+       </div>
+       <!-- CARDS 2.3 - 3x1 Layer -->
+
+<div class="container"></div>
+<!-- CARDS 2.3 - 3x1 Layer -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+        &lt;div class="card zoom-wrap"&gt;
+                &lt;div class="card-img-2-3 panel-image sunset-bg"&gt;&lt;/div&gt;  
+                &lt;div class="card-block text-left background-zoom overlay-back"&gt;
+                     &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                     &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                     &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                &lt;/div&gt;
+         &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-2-3 panel-image blowing-snow-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-center background-zoom overlay-back"&gt;
+                      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                      &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-2-3 panel-image snowy-road-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-right background-zoom overlay-back"&gt;
+                      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                      &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.overlay-hidden .overlay-back{
+    background-color:#0000009e;
+}
+.overlay-hidden .overlay-back .card-title,
+.overlay-hidden .overlay-back .card-text,
+.overlay-hidden .overlay-back .btn{
+    opacity:0;
+}
+div.zoom-wrap.overlay-hidden > div.panel-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+div.zoom-wrap.overlay-hidden:hover > div.panel-image{
+    -moz-transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1); 
+    opacity:.9;
+}
+div.zoom-wrap.overlay-hidden:hover > .overlay-back{
+    background-color:#00000050;
+    opacity:1;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .card-title,
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .card-text,
+div.zoom-wrap.overlay-hidden:hover > .overlay-back .btn{
+    color:#fff;
+    opacity:1;
+}
+.mac-office-bg{
+    background-image: url(../../template-folder/template-imagery/annie-spratt-294450.jpg);
+}
+.holding-up-phone-bg{
+    background-image: url(../../template-folder/template-imagery/zach-meaney-248676.jpg);
+}
+.phone-colors-bg{
+    background-image: url(../../template-folder/template-imagery/rodion-kutsaev-184298.jpg);
+}
+</code>
+</pre>
+</div>
+<!-- CARDS 2.3 - 3x1 Layer -->
+
+
+
+
+
+
+
+
+  <!-- CARDS 3 - 3x1 Full Size Layer -->
+  <a id="cd-3" name="cd-3"></a>
+  <h1 class="module-title">Card 3 - 3x1 Full Size - Inverse</h1>
+  <hr class="module-divider" />
+  
+
+
+      <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+          <div class="card zoom-wrap inverse-zoom">
+                  <div class="card-img-3 panel-image sunset-bg"></div>  
+                  <div class="card-block text-left background-zoom-tall inverse-overlay-back">
+                       <h4 class="card-title">Card title</h4>
+                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                       <a href="#" class="btn btn-success">Go somewhere</a>
+                  </div>
+           </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+           <div class="card zoom-wrap inverse-zoom">
+                   <div class="card-img-3 panel-image blowing-snow-bg"></div>  
+                   <div class="card-block text-center background-zoom-tall inverse-overlay-back">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                        <a href="#" class="btn btn-success">Go somewhere</a>
+                   </div>
+            </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 fullsize">
+           <div class="card zoom-wrap inverse-zoom">
+                   <div class="card-img-3 panel-image snowy-road-bg"></div>  
+                   <div class="card-block text-right background-zoom-tall inverse-overlay-back">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                        <a href="#" class="btn btn-success">Go somewhere</a>
+                   </div>
+            </div>
+      </div>
+
+  <!-- CARDS 3 - 3x1 Layer -->
+
+<div class="container"></div>
+<!-- CARDS 3 - 3x1 Layer -->
+<div class="container">
+<h5>HTML:</h5>
+<pre class="html">
+<code>
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+        &lt;div class="card zoom-wrap"&gt;
+                &lt;div class="card-img-3 panel-image sunset-bg"&gt;&lt;/div&gt;  
+                &lt;div class="card-block text-left background-zoom-tall inverse-overlay-back"&gt;
+                     &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                     &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                     &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                &lt;/div&gt;
+         &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-3 panel-image blowing-snow-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-center background-zoom-tall inverse-overlay-back"&gt;
+                      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                      &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-md-4 col-sm-4 col-xs-12 fullsize"&gt;
+         &lt;div class="card zoom-wrap"&gt;
+                 &lt;div class="card-img-3 panel-image snowy-road-bg"&gt;&lt;/div&gt;  
+                 &lt;div class="card-block text-right background-zoom-tall inverse-overlay-back"&gt;
+                      &lt;h4 class="card-title"&gt;Card title&lt;/h4&gt;
+                      &lt;p class="card-text"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.&lt;/p&gt;
+                      &lt;a href="#" class="btn btn-success"&gt;Go somewhere&lt;/a&gt;
+                 &lt;/div&gt;
+          &lt;/div&gt;
+    &lt;/div&gt;
+</code>
+</pre>
+<h5>CSS:</h5>
+<pre class="css">
+<code>
+.card.zoom-wrap{
+   margin:0;
+}
+div.zoom-wrap {
+   height: 100%;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+}
+
+div.zoom-wrap > div.panel-image {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   -moz-transition: all .5s;
+   -webkit-transition: all .5s;
+   transition: all .5s;
+   -moz-transform: scale(1,1);
+   -webkit-transform: scale(1,1);
+   transform: scale(1,1);
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
+   background-size: cover;
+   z-index: -1;
+}
+div.zoom-wrap:hover > div.panel-image{
+   -moz-transform: scale(1.1,1.1);
+   -webkit-transform: scale(1.1,1.1);
+   transform: scale(1.1,1.1); 
+}
+
+.sunset-bg{
+   background-image: url(../../template-folder/template-imagery/denys-nevozhai-185408.jpg);
+}
+.blowing-snow-bg{
+   background-image: url(../../template-folder/template-imagery/teddy-kelley-179100.jpg);
+}
+.snowy-road-bg{
+   background-image: url(../../template-folder/template-imagery/simon-matzinger-202022.jpg);
+}
+
+.background-zoom-tall{
+    padding:100% 10% 5% 10%;
+}
+.inverse-overlay-back{
+    background-color:#ffffff91;
+    color:#000;
+}
+
+</code>
+</pre>
+</div>
+<!-- CARDS 3 - 3x1 Layer -->
+
+
+
+</body>
+
+</html>
