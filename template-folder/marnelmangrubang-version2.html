@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Site</title>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../template-folder/css/parallax.css">
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Assistant:200" rel="stylesheet">
+
+</head>
+<body>
+    <div id="output2"></div>
+  
+          <div id="output">
+            <ul class="section-indicator">
+              <li><a href="#bg-img1"><i class="fa fa-circle-o"></i></a></li>
+              <li><a href="#content-area1"><i class="fa fa-circle-o"></i></a></li>
+              <li><a href="#content-area2"><i class="fa fa-circle-o"></i></a></li>
+              <li><a href="#bg-img2"><i class="fa fa-circle-o"></i></a></li>
+            </ul>
+          </div>
+
+
+          
+        
+          <div class="bgimg-1 section" id="bg-img1">
+                <div class="social-section">
+                    <ul class="social-list">
+                        <li><a href="#">Recent Work</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                
+
+                <div class="myname">
+                    <div class="myphoto"><img src="template-imagery/marnel-858x850.jpg" alt="Marnel Mangurbang photo" /></div>
+                    <span class="first">Marnel</span>
+                    <span class="last">Mangrubang</span>
+                    <p class="job-title">Front-End Engineer</p>
+                    <div class="learn-more">
+                            <a href="#content-area1">Learn More</a>
+                    </div>
+                </div>
+
+
+                <!-- <a href="#content-area1">
+                    <div class="caption">
+                        <span class="arrow-down">
+                            <span class="arrow-down2">
+                                <span class="arrow-down3">
+                                See More
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </a> -->
+
+          </div>
+        
+        
+        <div class="content-area-1 section" id="content-area1">
+            <h3 class="text-center">Introduction</h3>
+            <p class="introduction-text">
+                Hello, I am a Front-End Engineer based in Seattle, Washington. My education background consist of a Bachelor Degree in Computer Science with a specialization in Web Development. I also have a minor in mathematics which comes in handy in problem solving.
+                I have over 6 years of experience developing websites both front-end and back-end. My passion for websites enable me to create using the most current technologies and design trends.
+            </p>
+
+            <div class="row three-cards">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="card">
+                                
+                                <div class="card-block text-center">
+                                    <img src="template-imagery/coding.png" class="intro-icons" alt="computer coding"/>
+                                    <h4 class="card-title">Develop</h4>
+                                    <p class="card-text">Prototype design mock for project launches and create new design patterns using JS/JQuery before they are modulized. </p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="card">
+                           
+                            <div class="card-block text-center">
+                                <img src="template-imagery/web.png" class="intro-icons" alt="web"/>
+                                <h4 class="card-title">Upgrade</h4>
+                                <p class="card-text">I am involved in the update of our Content Management System (CMS) platform from version 6 to version 8. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="card">
+                            <div class="card-block text-center">
+                                <img src="template-imagery/startup.png" class="intro-icons" alt="rocket launch"/>
+                                <h4 class="card-title">Launch</h4>
+                                <p class="card-text">A few recent launches I have worked on are Themed Flight Fare Sales, Flight Plans and Sustainability Reports.</p>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+        </div>
+        <div class="content-area-divider section" id="content-area-divider">
+
+        </div>
+
+        <div class="content-area-2 section" id="content-area2">
+                <h3 class="text-center">Work Experience</h3>
+        </div>
+        <!-- End of content-area-2 -->
+        
+        <div class="bgimg-2 section" id="bg-img2">
+          <div class="caption">
+            <span style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+          </div>
+        </div>
+        
+        
+        
+        <div class="bgimg-3 section">
+          <div class="caption">
+            <span style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+          </div>
+        </div>
+        
+        <div class=" section" style="position:relative;">
+          <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+            <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+          </div>
+        </div>
+        
+        <!-- <div class="bgimg-1  section">
+          <div class="caption">
+            <span>COOL!</span>
+          </div>
+        </div> -->
+
+
+
+        <script>
+
+        function activeIndicator(scrollTopParam){
+            var domElement;
+            $(".section").each(function(){
+                domElement = $(this).offset().top;
+                if((domElement - scrollTopParam <= 1)){
+                    var sectionsID = $(this).attr("id");
+                    $(".section-indicator li a[href='#"+sectionsID+"'] i.fa").addClass("fa-circle");
+                    $(".section-indicator li :not(a[href='#"+sectionsID+"'] i.fa)").removeClass("fa-circle");
+                }
+            });
+        }
+
+
+        var $output = $('#output2');
+        $(window).on('scroll', function () {
+          var scrollTop     = $(window).scrollTop(),
+              elementOffset = $('#content-area1').offset().top,
+              distance      = (elementOffset - scrollTop),
+              negativeScroll = -(scrollTop * .2);
+              activeIndicator(scrollTop);
+          $output.prepend('<p>' + distance + '</p>');
+
+
+          $("#output").css("z-index",1);
+
+          if(distance > 700){
+            $(".section-indicator .fa").css("color","#ffffff");
+            $("#bg-img1").css(
+              {
+                "opacity":"1",
+                "background-position-y": +negativeScroll+"px"
+              }
+            );
+          }else if(distance <= 700 && distance > 600){
+            $(".section-indicator .fa").css("color","#ffffff");
+            $("#bg-img1").css(
+              {
+                "opacity":".8",
+                "background-position-y": +negativeScroll+"px"
+              }
+            );
+          }else if(distance <= 600 && distance > 500){
+            $(".section-indicator .fa").css("color","#ffffff");
+            $("#bg-img1").css(
+              {
+                "opacity":".7",
+                "background-position-y": +negativeScroll+"px"
+              }
+            );
+          }else if(distance <= 500 && distance > 400){
+            $(".section-indicator .fa").css("color","#ffffff");
+            $("#bg-img1").css(
+              {
+                "opacity":".6",
+                "background-position-y": +negativeScroll+"px"
+              }
+            );
+          }else if(distance <= 400 && distance > 300){
+            $(".section-indicator .fa").css("color","#000");
+            $("#bg-img1").css(
+              {
+                "opacity":".5",
+                "background-position-y": +negativeScroll+"px"
+              }
+            );
+          }else if(distance <= 300 && distance > 200){
+            $(".section-indicator .fa").css("color","#000");
+            $("#bg-img1").css(
+              {
+                "opacity":".4",
+                "background-position-y": +negativeScroll+"px"
+              }
+            );
+          }else if(distance <= 200 && distance > 100){
+            $(".section-indicator .fa").css("color","#000");
+            $("#bg-img1").css(
+              {
+                "opacity":".2",
+                "background-position-y": +negativeScroll+"px"
+              }
+            );
+          }else if(distance <= 100 && distance > 0){
+            $(".section-indicator .fa").css("color","#000");
+            $("#bg-img1:not(.caption)").css(
+              {
+                "opacity":"0",
+                "background-position-y": +negativeScroll+"px"
+              }
+            );
+          }else{
+            $(".section-indicator .fa").css("color","#000");
+            $("#bg-img1").css("opacity","0");
+          }
+
+        });
+
+
+
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 500, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
+        </script>
+        
+
+
+        </body>
+        
+</html>
+
+<style>
+
+#output2 {
+    position : fixed;
+    top      : 0;
+    right    : 0;
+    height   : 200px;
+    width    : 200px;
+    overflow : hidden;
+    border:1px solid yellow;
+    color:#fff;
+    /* z-index:1; */
+  }
+
+  #output {
+    position : fixed;
+    top      : 40%;
+    right    : 1%;
+    height   : 100px;
+    width    : 16px;
+    overflow : hidden;
+    color:#fff;
+    z-index:0;
+  }
+
+  .social-section{
+      width:100%;
+      height:50px;
+  }
+
+
+  .social-list{
+    list-style: none;
+    padding:13px;
+    text-align:right;
+  }
+  .social-list li{
+    display: inline;
+    padding:20px;
+  }
+  .social-list li a{
+    color:#fff;
+  }
+
+  .job-title{
+      font-size:20px;
+  }
+
+  .section-indicator{
+    list-style: none;
+    padding-left:0px;
+  }
+
+  .section-indicator .fa{
+    font-size:15px;
+    color:#000;
+  }
+
+</style>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carousels Template</title>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+<!-- update the version number as needed -->
+<!-- <script defer src="/__/firebase/4.4.0/firebase-app.js"></script> -->
+<!-- include only the Firebase features as you need -->
+<!-- <script defer src="/__/firebase/4.4.0/firebase-auth.js"></script>
+<script defer src="/__/firebase/4.4.0/firebase-database.js"></script>
+<script defer src="/__/firebase/4.4.0/firebase-messaging.js"></script>
+<script defer src="/__/firebase/4.4.0/firebase-storage.js"></script> -->
+<!-- initialize the SDK after all desired features are loaded -->
+<!-- <script defer src="/__/firebase/init.js"></script> -->
+
+
+
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<!-- GLOBAL HEADER Style -->
+<!-- <link rel="stylesheet" type="text/css" href="../template-folder/css/global-header.css"> -->
+<link rel="stylesheet" type="text/css" href="carousels.css">
+
+<script defer src="../template-folder/js/search-box.js"></script>
+
+</head>
+
+<body>
+<!--    
+    <div class="header row">
+        <div class="col-sm-9">
+            <a class="navbar-brand" href="https://triplesparkdesigns.com/heroes/jumbo-tron.html">
+              <img style="display:none;" class="team-logo" src="../template-folder/template-imagery/sparklogo_v2.png" alt="Triple Spark Design Logo">
+            </a>
+        </div>
+        <div class="col-sm-2 margintop-16">
+            <input id="search-box"class="form-control" type="text" name="search_box" placeholder="Search for module"/>
+        </div>
+        <div class="col-sm-1 margintop-16 marginbottom-16">
+            <a href="#" id="searchBtn" class="btn-warning btn btn-ghost-blue form-control">Search</a>
+        </div>
+    </div> -->
+
+
+
+        <div class="container-fluid carousel-container">
+            <h1 class="text-center mb-3">Fullsize Multi-Card Carousel</h1>
+
+            <div id="myFullsizeCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner row w-100 mx-auto">
+                <!-- Office with MACs Card -->
+                <div class="carousel-item col-md-4 fullsize active">
+                  <div class="card zoom-wrap overlay-hidden">
+
+                      <div class="card-img-2-1 panel-image mac-office-bg"></div>  
+                      <div class="card-block text-center background-zoom overlay-back">
+                           <h4 class="card-title">Card title</h4>
+                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                           <a href="#" class="btn btn-success">Go somewhere</a>
+                      </div>
+
+                  </div>
+                </div>
+                <!-- Taking picture of street with a cellphone Card -->
+                <div class="carousel-item col-md-4 fullsize">
+                  <div class="card zoom-wrap overlay-hidden">
+
+                      <div class="card-img-2-1 panel-image holding-up-phone-bg"></div>  
+                      <div class="card-block text-center background-zoom overlay-back">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                            <a href="#" class="btn btn-success">Go somewhere</a>
+                      </div>
+
+                  </div>
+                </div>
+                <!-- Phone held on hand Card -->
+                <div class="carousel-item col-md-4 fullsize">
+                  <div class="card zoom-wrap overlay-hidden">
+
+                      <div class="card-img-2-1 panel-image phone-colors-bg"></div>  
+                      <div class="card-block text-center background-zoom overlay-back">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                          <a href="#" class="btn btn-success">Go somewhere</a>
+                      </div>
+
+                  </div>
+                </div>
+                <!-- Tablet on table Card -->
+                <div class="carousel-item col-md-4 fullsize">
+                    <div class="card zoom-wrap overlay-hidden">
+
+                      <div class="card-img-2-1 panel-image tablet-on-table-bg"></div>  
+                      <div class="card-block text-center background-zoom overlay-back">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                          <a href="#" class="btn btn-success">Go somewhere</a>
+                      </div>
+
+                  </div>
+                </div>
+                <!-- MAC Devices Card -->
+                <div class="carousel-item col-md-4 fullsize">
+                    <div class="card zoom-wrap overlay-hidden">
+
+                      <div class="card-img-2-1 panel-image ios-devices-bg"></div>  
+                      <div class="card-block text-center background-zoom overlay-back">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                          <a href="#" class="btn btn-success">Go somewhere</a>
+                      </div>
+
+                  </div>
+                </div>
+                <!-- MAC Book on desk Card -->
+                <div class="carousel-item col-md-4 fullsize">
+                    <div class="card zoom-wrap overlay-hidden">
+
+                      <div class="card-img-2-1 panel-image mac-on-desk-bg"></div>  
+                      <div class="card-block text-center background-zoom overlay-back">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                          <a href="#" class="btn btn-success">Go somewhere</a>
+                      </div>
+
+                  </div>
+                </div>
+                <!-- Blowing snow Card -->
+                <div class="carousel-item col-md-4 fullsize">
+                    <div class="card zoom-wrap overlay-hidden">
+
+                      <div class="card-img-2-1 panel-image blowing-snow-bg"></div>  
+                      <div class="card-block text-center background-zoom overlay-back">
+                          <h4 class="card-title">Card title</h4>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin augue est, sollicitudin nec turpis quis, suscipit facilisis sem.</p>
+                          <a href="#" class="btn btn-success">Go somewhere</a>
+                      </div>
+
+                  </div>
+                </div>   
+              </div>
+              <!-- End of carousel-inner -->
+              <a class="carousel-control-prev" href="#myFullsizeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#myFullsizeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <!-- End of carousel-inner -->
+          </div>
+
+
+
+
+
+
+<script>
+ $("#myFullsizeCarousel").on("slide.bs.carousel", function(e) {
+  var $e = $(e.relatedTarget);
+  var idx = $e.index();
+  var itemsPerSlide = 3;
+  var totalItems = $(".carousel-item").length;
+
+  if (idx >= totalItems - (itemsPerSlide - 1)) {
+    var it = itemsPerSlide - (totalItems - idx);
+    for (var i = 0; i < it; i++) {
+      // append slides to end
+      if (e.direction == "left") {
+        $(".carousel-item")
+          .eq(i)
+          .appendTo(".carousel-inner");
+      } else {
+        $(".carousel-item")
+          .eq(0)
+          .appendTo(".carousel-inner");
+      }
+    }
+  }
+}); 
+</script>
+
+</body>
+
+</html>

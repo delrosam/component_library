@@ -36,7 +36,7 @@ p.card-text{
 
 /* Cards 1 */
 .card-img-1.panel-image{
-    background-image: url(../../template-folder/template-imagery/stacy-wyss-702.jpg);
+    background-image: url(../template-folder/template-imagery/stacy-wyss-702.jpg);
 }
 
 .padded{
@@ -52,7 +52,7 @@ p.card-text{
 
 /* Cards 1.2 */
 .card-img-1-2.panel-image{
-    background-image: url(../../template-folder/template-imagery/trevor-cole-389734.jpg);
+    background-image: url(../template-folder/template-imagery/trevor-cole-389734.jpg);
 }
 
 
@@ -102,13 +102,13 @@ div.zoom-wrap:hover > div.panel-image{
 
 
 .sunset-bg{
-    background-image: url(../../template-folder/template-imagery/denys-nevozhai-185408.jpg);
+    background-image: url(../template-folder/template-imagery/denys-nevozhai-185408.jpg);
 }
 .blowing-snow-bg{
-    background-image: url(../../template-folder/template-imagery/teddy-kelley-179100.jpg);
+    background-image: url(../template-folder/template-imagery/teddy-kelley-179100.jpg);
 }
 .snowy-road-bg{
-    background-image: url(../../template-folder/template-imagery/simon-matzinger-202022.jpg);
+    background-image: url(../template-folder/template-imagery/simon-matzinger-202022.jpg);
 }
 
 
@@ -159,13 +159,13 @@ div.zoom-wrap.overlay-hidden:hover > .overlay-back .btn{
     opacity:1;
 }
 .mac-office-bg{
-    background-image: url(../../template-folder/template-imagery/annie-spratt-294450.jpg);
+    background-image: url(../template-folder/template-imagery/annie-spratt-294450.jpg);
 }
 .holding-up-phone-bg{
-    background-image: url(../../template-folder/template-imagery/zach-meaney-248676.jpg);
+    background-image: url(../template-folder/template-imagery/zach-meaney-248676.jpg);
 }
 .phone-colors-bg{
-    background-image: url(../../template-folder/template-imagery/rodion-kutsaev-184298.jpg);
+    background-image: url(../template-folder/template-imagery/rodion-kutsaev-184298.jpg);
 }
 
 
@@ -175,13 +175,13 @@ div.zoom-wrap.overlay-hidden:hover > .overlay-back .btn{
 
 /*CARDS 2.2 - Title Only*/
 .snow-tree-left-bg{
-    background-image: url(../../template-folder/template-imagery/pigoff-photography-195118.jpg);
+    background-image: url(../template-folder/template-imagery/pigoff-photography-195118.jpg);
 }
 .pine-leaf-bg{
-    background-image: url(../../template-folder/template-imagery/mikael-kristenson-1300.jpg);
+    background-image: url(../template-folder/template-imagery/mikael-kristenson-1300.jpg);
 }
 .waterfall-bg{
-    background-image: url(../../template-folder/template-imagery/blair-fraser-21140.jpg);
+    background-image: url(../template-folder/template-imagery/blair-fraser-21140.jpg);
 }
 
 
@@ -231,13 +231,13 @@ div.zoom-wrap.overlay-hidden-swap:hover > .overlay-back .btn{
     opacity:1;
 }
 .tablet-on-table-bg{
-    background-image: url(../../template-folder/template-imagery/aaron-burden-329406.jpg);
+    background-image: url(../template-folder/template-imagery/aaron-burden-329406.jpg);
 }
 .ios-devices-bg{
-    background-image: url(../../template-folder/template-imagery/william-iven-5895.jpg);
+    background-image: url(../template-folder/template-imagery/william-iven-5895.jpg);
 }
 .mac-on-desk-bg{
-    background-image: url(../../template-folder/template-imagery/domenico-loia-364221.jpg);
+    background-image: url(../template-folder/template-imagery/domenico-loia-364221.jpg);
 }
 
 
