@@ -73,7 +73,7 @@ body, html {
   }
   .content-area-divider{
     height:70px;
-    background-color:#282e34;
+    background-color:#282E34;
   }
   .content-area-divider::after{
     content: "\f0d7";
@@ -91,7 +91,7 @@ body, html {
     z-index:1;
   }
 
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1, .bgimg-2 {
     position: relative;
     background-attachment: fixed;
     background-position-x: center;
@@ -109,10 +109,6 @@ body, html {
     min-height: 400px;
   }
   
-  .bgimg-3 {
-    background-image: url("img_parallax3.jpg");
-    min-height: 400px;
-  }
 
   .content-area-1{
         color: #777;
@@ -121,14 +117,23 @@ body, html {
         padding:60px;
         text-align: justify;
     }
+
     .content-area-2{
       color:#fff;
         position:relative;
         background-color:#282E34;
         padding:50px 80px;
         text-align: justify;
-        height:1000px
+        height:100%;
     }
+
+.content-area-3{
+    color:#000;
+    position:relative;
+    background-color:#fff;
+    padding:5px 80px;
+    text-align: justify;
+}
 
   .caption {
     position: absolute;
@@ -192,6 +197,14 @@ body, html {
     text-align: center;
   }
 
+  .experience-row{
+    margin-top:50px;
+    padding-bottom:40px;
+  }
+
+  .experience-row.border{
+    border-bottom:1px solid #b0b6bb;
+  }
 
   h4.card-title{
     margin-top:0px;
@@ -208,10 +221,68 @@ body, html {
     width:200px;
   }
 
+  .airplane-asset{
+    width:190px;
+    position: relative;
+    top:300px;
+  }
+
+  .car-asset{
+    width:110px;
+    position: relative;
+    top:300px;
+  }
+
+  .cwu-asset{
+    width:300px;
+    position: relative;
+    top:-90px;
+  }
+  .cwu-logo{
+    text-align: center;
+    width:100%;
+    padding:1% 3% 0% 3%;
+    top:-50px;
+    position:relative;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 100px solid #fff;
+  }
+  .cwu-dots{
+    width: 60%;
+    text-align: justify;
+    margin: auto;
+  }
   
+
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 1024px) {
-      .bgimg-1, .bgimg-2, .bgimg-3 {
+      .bgimg-1, .bgimg-2{
           background-attachment: scroll;
       }
+  }
+
+
+  @media (max-width:641px)  { 
+    .airplane-asset,
+    .car-asset{
+      display:none;
+    }
+    .content-area-2,
+    .content-area-3{
+      padding:1px 40px !important;
+    }
+    #apps{
+      width:30%;
+    }
+    .cwu-logo{
+      border-top: 80px solid #fff;
+    }
+    .cwu-asset{
+      width:100%;
+      top:-40px;
+    }
+    .cwu-dots{
+      width: 100%;
+    }
   }

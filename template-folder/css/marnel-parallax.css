@@ -1,0 +1,397 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+    color: #777;
+    background-color:#FFC107 !important;
+    /* background-color:#000 !important; */
+  }
+
+  #output2 {
+    position : fixed;
+    top      : 0;
+    right    : 0;
+    height   : 200px;
+    width    : 200px;
+    overflow : hidden;
+    border:1px solid yellow;
+    color:#fff;
+    z-index:1;
+  }
+
+  #output {
+    position : fixed;
+    top      : 40%;
+    right    : 1%;
+    height   : 200px;
+    width    : 16px;
+    overflow : hidden;
+    color:#fff;
+    z-index:0;
+  }
+
+  .social-section{
+      width:100%;
+      height:50px;
+  }
+
+
+  .social-list{
+    list-style: none;
+    padding:13px;
+    text-align:right;
+  }
+  .social-list li{
+    display: inline;
+    padding:10px;
+  }
+  .social-list li a{
+    color:#fff;
+  }
+
+  .job-title{
+      font-size:20px;
+  }
+
+  .section-indicator{
+    list-style: none;
+    padding-left:0px;
+  }
+
+  .section-indicator .fa{
+    font-size:15px;
+    color:#000;
+  }
+
+  h3.text-center{
+      text-align:center;
+      font-size:30px;
+  }
+
+  .first{
+    font-weight:bold;
+    font-size:75px;
+    color:#fff;
+    display:inline;
+  }
+  .last{
+    font-weight:bold;
+    font-size:40px;
+    color:#fff;
+    display: block;
+    margin-top:-40px;
+  }
+
+  .myname {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size:10px;
+  }
+  
+  .myname .myphoto img{
+    width:100px;
+    border-radius:50px;
+  }
+  .learn-more{
+    margin-top:15%;
+  }
+  .learn-more a {
+    /* background-color: rgb(218, 82, 82); */
+    border:1px solid #fff;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    letter-spacing: 6px;
+  }
+  .learn-more a:hover,
+  .social-list a:hover{
+    text-decoration:none;
+    color:#fff;
+  }
+
+  .learn-more::after{
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 18px;
+    padding-right: 0.5em;
+    position: relative;
+    top: 29px;
+    left: -90px;;
+  }
+  .content-area-divider{
+    height:70px;
+    background-color:#282E34;
+  }
+  .content-area-divider::after{
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 200px;
+    padding-right: 0.5em;
+    position: relative;
+    bottom:143px;
+    margin:auto;
+    z-index:1;
+  }
+
+  .bgimg-1, .bgimg-2 {
+    position: relative;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hard-light;
+  }
+  .bgimg-1 {
+    background-image: url(../img/drew-hays-161811-v2.jpg);
+    min-height: 100%;
+  }
+  
+
+  .bgimg-2 {
+    background-image: url(../img/cwu-building.png);
+    min-height: 100%;
+    color:#fff;
+    position:relative;
+    background-color:#282E34;
+    padding:50px 80px;
+  }
+
+  
+
+  .content-area-1{
+        color: #777;
+        background-color:white;
+        text-align:center;
+        padding:60px;
+    }
+
+.content-area-2{
+  color:#fff;
+    position:relative;
+    background-color:#282E34;
+    padding:50px 80px;
+    height:100%;
+}
+
+.content-area-3{
+    color:#282e34;
+    position:relative;
+    background-color:#fff;
+    padding:5px 80px;
+}
+.content-area{
+  color:#fff;
+    position:relative;
+    background-color:#282E34;
+    padding:50px 80px;
+    border-bottom:10px solid #feac40;
+}
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size:10px;
+  }
+  
+  .caption span.border {
+    background-color: rgb(218, 82, 82);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  /* .caption::after {
+    content: "\25BC"; 
+  } */
+
+  .arrow-down{
+    width:0px;
+    height:0px;
+    border-left:8px solid transparent;
+    border-right:8px solid transparent;
+    border-top:10px solid rgb(255, 255, 255);
+  }
+
+  .arrow-down2{
+    width:0px;
+    height:0px;
+    border-left:4px solid transparent;
+    border-right:4px solid transparent;
+    border-top:8px solid rgb(255, 255, 255);
+    position:relative;
+    top:11px;
+  }
+
+  .arrow-down3::after {
+    content: "\25BC";
+    display:inline-block;
+    color:#fff; 
+  } 
+
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+
+
+  .three-cards{
+    padding-top:20px;
+  }
+  .introduction-text{
+    padding:0% 5%;
+    font-size:18px;
+    text-align: center;
+  }
+
+  .experience-row{
+    margin-top:50px;
+    padding-bottom:40px;
+  }
+
+  .experience-row.border{
+    border-bottom:1px solid #b0b6bb;
+  }
+
+  h4.card-title{
+    margin-top:0px;
+  }
+  p.card-text{
+      font-size:16px;
+  }
+  .card{
+      margin-bottom:15px;
+      border:1px solid transparent !important;
+  }
+  .intro-icons{
+    margin-bottom:30px;
+    width:200px;
+  }
+
+  .airplane-asset{
+    width:190px;
+    position: relative;
+    top:300px;
+  }
+
+  .car-asset{
+    width:110px;
+    position: relative;
+    top:300px;
+  }
+
+  .cwu-asset{
+    width:300px;
+    position: relative;
+    top:-90px;
+  }
+  .cwu-logo{
+    text-align: center;
+    width:100%;
+    padding:1% 3% 0% 3%;
+    top:-50px;
+    position:relative;
+    border-left: 120px solid transparent;
+    border-right: 120px solid transparent;
+    border-top: 100px solid #fff;
+  }
+  .cwu-dots{
+    width: 60%;
+    text-align: justify;
+    margin: auto;
+  }
+
+  .degree-row{
+    margin-top:10px;
+    color:#282e34;
+  }
+  .divided-card{
+    text-align:center;
+    padding:50px 10px;
+    background-color:#ffffffa8 !important;
+    border-bottom:1px solid #626262 !important;
+  }
+  .divided-card h4{
+    margin-top:10px;
+  }
+  .cwu-seal{
+    text-align:center;
+    width:200px;
+  }
+  
+  .contact-information{
+    text-align:center;
+  }
+  .contact-information .fa{
+    font-size:40px;
+    color:#feac40;
+  }
+
+  .contact-information .contact-value{
+    font-size:13px;
+    line-height:17px;
+    font-weight:600;
+  }
+
+  .contact-information .contact-value a{
+    text-decoration: none;
+    color:#fff;
+  }
+  .contact-information .contact-label{
+    font-size:12px;
+    line-height:0px;
+    font-style: italic;
+    margin-top:-10px;
+  }
+
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2{
+          background-attachment: scroll;
+      }
+  }
+
+
+  @media (max-width:641px)  { 
+    .airplane-asset,
+    .car-asset{
+      display:none;
+    }
+    .content-area-2,
+    .content-area-3{
+      padding:1px 40px !important;
+    }
+    #apps{
+      width:30%;
+    }
+    .cwu-logo{
+      border-top: 80px solid #fff;
+    }
+    .cwu-asset{
+      width:100%;
+      top:-40px;
+    }
+    .cwu-dots{
+      width: 100%;
+    }
+  }
