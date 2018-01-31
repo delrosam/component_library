@@ -76,8 +76,16 @@
 
           </div>
         
+
+        <div class="content-area-divider section" id="content-area-divider">
+          <img src="img/icon-fisherman_position1.png" id="fisherman-image1" alt="Fisherman" />
+          <img src="img/icon-fisherman_position2.png" id="fisherman-image2" class="hide-image" alt="Fisherman" />
+        </div>
         
+
         <div class="content-area-1 section" id="content-area1">
+            <!-- <img src="img/icon-fisherman_position1.png" id="fisherman-image1" class="fisherman-overlay" alt="Fisherman" />
+            <img src="img/icon-fisherman_position2.png" id="fisherman-image2" class="fisherman-overlay" alt="Fisherman" /> -->
             <h3 class="text-center">Services</h3>
             <div class="row three-cards">
                     <div class="col-md-4 col-sm-4 col-xs-12">
@@ -305,107 +313,123 @@
         var $output = $('#output2');
         $(window).on('scroll', function () {
           var scrollTop     = $(window).scrollTop(),
-              elementOffset = $('#content-area1').offset().top,
-              airplaneElementOffset = $('#content-area3').offset().top,
-              carElementOffset = $('#content-area4').offset().top,
-              alaskaExperienceArea = (airplaneElementOffset - scrollTop),
-              cdkExperienceArea = (carElementOffset - scrollTop),
-              planeScrollSpeed = (alaskaExperienceArea * .8),
-              carScrollSpeed = (cdkExperienceArea * .9),
+              elementOffset = $('#content-area-divider').offset().top,
               distance      = (elementOffset - scrollTop),
               negativeScroll = -(scrollTop * .2);
 
               activeIndicator(scrollTop);
 
-          // $output.prepend('<p> PLANE: ' + alaskaExperienceArea + '</p>');
+          $output.prepend('<p> DISTANCE: ' + distance + '</p>');
           // $output.prepend('<p> SCROLLTOP: ' + negativeScroll + '</p>');
 
 
-          if(alaskaExperienceArea < 500){
-            $(".airplane-asset").css(
-              {
-                "top": +planeScrollSpeed+"px"
-              }
-            );
-          }
+          // if(alaskaExperienceArea < 500){
+          //   $(".airplane-asset").css(
+          //     {
+          //       "top": +planeScrollSpeed+"px"
+          //     }
+          //   );
+          // }
           
-          if(cdkExperienceArea < 500){
-            $(".car-asset").css(
-              {
-                "top": +carScrollSpeed+"px"
-              }
-            );
-          }
+          // if(cdkExperienceArea < 500){
+          //   $(".car-asset").css(
+          //     {
+          //       "top": +carScrollSpeed+"px"
+          //     }
+          //   );
+          // }
 
           $("#output").css("z-index",1);
 
           if(distance > 700){
             $(".section-indicator .fa").css("color","#ffffff");
-            $("#bg-img1").css(
-              {
-                "opacity":"1",
-                "background-position-y": +negativeScroll+"px"
-              }
-            );
+            // $("#bg-img1").css(
+            //   {
+            //     "opacity":"1",
+            //     "background-position-y": +negativeScroll+"px"
+            //   }
+            // );
+            $("#fisherman-image1").removeClass("hide-image");
+            $("#fisherman-image2").addClass("hide-image");
           }else if(distance <= 700 && distance > 600){
             $(".section-indicator .fa").css("color","#ffffff");
-            $("#bg-img1").css(
-              {
-                "opacity":".8",
-                "background-position-y": +negativeScroll+"px"
-              }
-            );
+            // $("#bg-img1").css(
+            //   {
+            //     "opacity":".8",
+            //     "background-position-y": +negativeScroll+"px"
+            //   }
+            // );
+            $("#fisherman-image1").removeClass("hide-image");
+            $("#fisherman-image2").addClass("hide-image");
           }else if(distance <= 600 && distance > 500){
             $(".section-indicator .fa").css("color","#ffffff");
-            $("#bg-img1").css(
-              {
-                "opacity":".7",
-                "background-position-y": +negativeScroll+"px"
-              }
-            );
+            // $("#bg-img1").css(
+            //   {
+            //     "opacity":".7",
+            //     "background-position-y": +negativeScroll+"px"
+            //   }
+            // );
+            $("#fisherman-image1").removeClass("hide-image");
+            $("#fisherman-image2").addClass("hide-image");
           }else if(distance <= 500 && distance > 400){
             $(".section-indicator .fa").css("color","#ffffff");
-            $("#bg-img1").css(
-              {
-                "opacity":".6",
-                "background-position-y": +negativeScroll+"px"
-              }
-            );
+            // $("#bg-img1").css(
+            //   {
+            //     "opacity":".6",
+            //     "background-position-y": +negativeScroll+"px"
+            //   }
+            // );
+            $("#fisherman-image1").removeClass("hide-image");
+            $("#fisherman-image2").addClass("hide-image");
           }else if(distance <= 400 && distance > 300){
             $(".section-indicator .fa").css("color","#000");
-            $("#bg-img1").css(
-              {
-                "opacity":".5",
-                "background-position-y": +negativeScroll+"px"
-              }
-            );
+            // $("#bg-img1").css(
+            //   {
+            //     "opacity":".5",
+            //     "background-position-y": +negativeScroll+"px"
+            //   }
+            // );
+            $("#fisherman-image1").addClass("hide-image");
+            $("#fisherman-image2").removeClass("hide-image");
           }else if(distance <= 300 && distance > 200){
             $(".section-indicator .fa").css("color","#000");
-            $("#bg-img1").css(
-              {
-                "opacity":".4",
-                "background-position-y": +negativeScroll+"px"
-              }
-            );
+            // $("#bg-img1").css(
+            //   {
+            //     "opacity":".4",
+            //     "background-position-y": +negativeScroll+"px"
+            //   }
+            // );
+            $("#fisherman-image1").addClass("hide-image");
+            $("#fisherman-image2").removeClass("hide-image");
           }else if(distance <= 200 && distance > 100){
             $(".section-indicator .fa").css("color","#000");
-            $("#bg-img1").css(
-              {
-                "opacity":".2",
-                "background-position-y": +negativeScroll+"px"
-              }
-            );
-          }else if(distance <= 100 && distance > 0){
+            // $("#bg-img1").css(
+            //   {
+            //     "opacity":".2",
+            //     "background-position-y": +negativeScroll+"px"
+            //   }
+            // );
+            $("#fisherman-image1").addClass("hide-image");
+            $("#fisherman-image2").removeClass("hide-image");
+          }else if(distance <= 100 && distance > 40){
             $(".section-indicator .fa").css("color","#000");
-            $("#bg-img1:not(.caption)").css(
-              {
-                "opacity":"0",
-                "background-position-y": +negativeScroll+"px"
-              }
-            );
+            // $("#bg-img1:not(.caption)").css(
+            //   {
+            //     "opacity":"0",
+            //     "background-position-y": +negativeScroll+"px"
+            //   }
+            // );
+            $("#fisherman-image1").addClass("hide-image");
+            $("#fisherman-image2").removeClass("hide-image");
+          }else if(distance <= 40 && distance > 0){
+            
+            $("#fisherman-image1").addClass("hide-image");
+            $("#fisherman-image2").removeClass("hide-image");
           }else{
             $(".section-indicator .fa").css("color","#000");
-            $("#bg-img1").css("opacity","0");
+            // $("#bg-img1").css("opacity","0");
+            $("#fisherman-image1").addClass("hide-image");
+            $("#fisherman-image2").removeClass("hide-image");
           }
 
         });
